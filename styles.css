@@ -1,0 +1,225 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* Header Styles */
+header {
+  background-color: #c2c2c2;
+  color: black;
+  padding: 20px;
+  text-align: center; /* Zentrierter Text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+  position: sticky; /* Haftet am oberen Rand */
+  top: 0; /* Haftet oben */
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none; /* Entfernt Aufzählungszeichen */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(247, 247, 247);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer */
+
+
+footer {
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  
+  justify-content: space-around;
+  
+}
+
+
+.footer-section h6 {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  display: block;
+  font-family:  sans-serif;
+  font-size: 12px;
+  margin: 2px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+footer p {
+  font-family:  sans-serif;
+  font-size: 10px;
+  color: #000;
+}
+
+
+/* Section Spieler*/
+
+.bild_cr7 {
+  width: 300px; /* Breite auf 300 Pixel setzen */
+  height: auto; /* Höhe automatisch anpassen, um das Seitenverhältnis beizubehalten */
+  border: 2px solid #ddd; /* Rahmen um das Bild */
+  border-radius: 8px; /* Abgerundete Ecken */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatteneffekt */
+}
+
+section.spieler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatteneffekt */
+  background-color: #f9f9f9;
+  max-width: 800px; /* Maximalbreite */
+}
+
+/* Section Aktuell*/
+
+.teams {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Abstand zwischen den Bildern */
+  margin-bottom: 20px;
+}
+
+.teams img {
+  width: 200px;
+  height: 250px;
+}
+
+.teamsText{
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* section alte Clubs*/
+
+
+
+.alteClubs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 gleiche Spalten */
+  margin: 60px;
+}
+.alteClubs div {
+  border: 2px solid #333; /* Dickerer Rand */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Verschärfter Schatteneffekt */
+}
+.alteClubs img {
+  max-width: auto; /* Bild passt sich an die Breite des Containers an */
+  height: 200px; /* Beibehält das Seitenverhältnis */
+}
+
+.alteClubs .text {
+  font-size: 14px; /* Kleine Schriftgröße für den Text */
+  text-align: center; 
+}
+
+
+
+/* Style für club.html */
+
+/* alNassr Sektion */
+.alNassr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.club-info {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.club-info li {
+  margin: 0 10px;
+}
+
+.club-image {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* clubs Sektion */
+.clubs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.club1 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.club1 img {
+  margin: 20px;
+    width: auto;
+    height: 200px;
+    
+}
+
+.club1 h2 {
+    margin: 10px 0;
+}
+
+.club1:hover {
+    transform: scale(1.1);
+}
+
+
