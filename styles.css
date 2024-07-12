@@ -256,6 +256,15 @@ li {
   text-align: center; 
 }
 
+.fade-in {
+  opacity: 0;
+  transition: 1s;
+}
+
+.fade-in-active {
+  opacity: 1;
+}
+
 
 /* Newsletter */
 .newsletter {
@@ -412,4 +421,31 @@ li {
 }
 .contact-form input[type="submit"]:hover {
   background-color: #0779e4;
+}
+
+.Team {
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.Team p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.Team strong {
+  color: #333;
+}
+
+.Team img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
