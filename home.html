@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cristiano Ronaldo</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -21,10 +22,30 @@
 
     <section class="spieler">
       <article>
-        <img
-          class="bild_cr7"
-          src="img/WhatsApp Bild 2024-06-14 um 14.26.50_bbf2112b.jpg"
-        />
+        <div class="carousel">
+          <figure class="active">
+            <img
+              src="img/WhatsApp Bild 2024-06-14 um 14.26.50_bbf2112b.jpg"
+              alt="Bild 1"
+            />
+          </figure>
+          <figure>
+            <img src="img/fam.jpg" alt="Bild 2" />
+          </figure>
+          <figure>
+            <img src="img/geo.jpg" alt="Bild 3" />
+          </figure>
+
+          <nav>
+            <button type="button" class="carousel-prev" onclick="prevSlide()">
+              &#10094;
+            </button>
+            <button type="button" class="carousel-next" onclick="nextSlide()">
+              &#10095;
+            </button>
+          </nav>
+        </div>
+
         <h1>Cristiano Ronaldo</h1>
         <p>
           Cristiano Ronaldo, geboren am 5. Februar 1985 in Funchal, Madeira,
@@ -44,41 +65,58 @@
         </li>
         <li><img src="img/images.png" alt="Al Nassr" /></li>
       </ul>
-      <p class="teamsText">Hallo text</p>
+      <p class="teamsText">
+        Seit 2003 ist Ronaldo bei der Nationalmanschaft Portugal dabei. Ronaldo
+        führte Portugal zum ersten grossen internationalen Titel bei der UEFA
+        Euro 2016. Obwohl er im Finale gegen Frankreich verletzungsbedingt
+        ausgewechselt werden musste, war sein Einfluss auf das Turnier
+        unbestreitbar. Seine Führung und seine Tore in den vorangegangenen
+        Spielen halfen Portugal, das Finale zu erreichen. Bisher ist er noch
+        immer dabei und zeigt auf diesem Niveau gute Leistungen. Derzeit ist er
+        beim Club Al Nassr unter Vertrag, dem er 2023 beigetreten ist. Auch dort
+        zeigt er sich gut und auch mit viel Ehrgeiz.
+      </p>
     </section>
-
+    <h2 class="Titel">Laufbahn</h2>
     <section class="alteClubs">
-      <div class="bild"><img src="img/Sporting_Lissabon.svg.png"></div>
-      <div class="text">Text</div>
-      <div class="text">Text</div>
-      <div class="bild"><img src="img/Download.png"></div>
-      <div class="bild"><img src="img/Download (1).png"></div>
-      <div class="text">Text</div>
-      <div class="Text">Text</div>
-      <div class="bild"><img src="img/Download (2).png"></div>
-      <div class="bild"><img src="img/Download.png"></div>
-      <div class="text">Text</div>
-      <div class="text">Text</div>
-      <div class="bild"><img src="img/images.png"></div>
-      
+      <div class="bild"><img src="img/Sporting_Lissabon.svg.png" /></div>
+      <div class="text"><p>2002-2003</p></div>
+      <div class="text"><p>2003-2009</p></div>
+      <div class="bild"><img src="img/Download.png" /></div>
+      <div class="bild"><img src="img/Download (1).png" /></div>
+      <div class="text"><p>2009-2008</p></div>
+      <div class="text"><p>2018-2021</p></div>
+      <div class="bild"><img src="img/Download (2).png" /></div>
+      <div class="bild"><img src="img/Download.png" /></div>
+      <div class="text"><p>2021-2022</p></div>
+      <div class="text"><p>2023-Heute</p></div>
+      <div class="bild"><img src="img/images.png" /></div>
     </section>
 
-   
-   
-
-  
+    <section class="newsletter">
+      <h2>Newsletter Anmeldung</h2>
+      <p>
+        Melden Sie sich an, um die neusten Informationen von Cristiano
+        mitzubekommen!
+      </p>
+      <form name="newsletterForm">
+        <label for="newsletter-email">E-Mail-Adresse:</label>
+        <input
+          type="email"
+          id="newsletter-email"
+          name="newsletter-email"
+          required
+        />
+        <input type="submit" value="Anmelden" />
+      </form>
+    </section>
   </body>
   <footer>
-    <div class="footer-container">
-      
-        <div class="footer-section follow">
-            <h6>Folge Cristiano</h6>
-            <a href="#" src="https://www.instagram.com/cristiano/?hl=de">INSTAGRAM</a>
-            
-        </div>
-        
+    <div class="footer-section">
+      <h6>Folge Cristiano</h6>
+      <a href="https://www.instagram.com/cristiano/?hl=de">INSTAGRAM</a>
     </div>
-    <p>&copy; 2024 Cristiano Ronaldo®</p>
-</footer>
 
+    <p>&copy; 2024 Cristiano Ronaldo®</p>
+  </footer>
 </html>

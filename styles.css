@@ -1,15 +1,72 @@
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel figure img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .akteuell, .alteClubs, .newsletter {
+    padding: 10px;
+  }
+
+  .alteClubs img {
+    height: 150px;
+  }
+
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .clubs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .clubs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+  .clubs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+p{
+  font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
 
 /* Header Styles */
 header {
   background-color: #c2c2c2;
   color: black;
   padding: 20px;
-  text-align: center; /* Zentrierter Text */
+  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
   position: sticky; /* Haftet am oberen Rand */
-  top: 0; /* Haftet oben */
+  top: 0; 
+  z-index: 1000; /*Damit es im Vordergrund bleibt*/
 }
 
 header h1 {
@@ -34,39 +91,28 @@ nav ul li a {
   font-weight: bold;
 }
 
-footer {
-  background-color: rgb(247, 247, 247);
-  padding: 20px;
-  text-align: center;
-}
+
 
 /* Footer */
 
 
 footer {
   background-color: rgb(247, 247, 247);
+  padding: 20px;
   text-align: center;
-}
-
-.footer-container {
-  display: flex;
-  
-  justify-content: space-around;
-  
 }
 
 
 .footer-section h6 {
   font-family: sans-serif;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .footer-section a {
   display: block;
   font-family:  sans-serif;
   font-size: 12px;
-  margin: 2px 0;
   text-decoration: none;
   color: #000;
 }
@@ -80,13 +126,7 @@ footer p {
 
 /* Section Spieler*/
 
-.bild_cr7 {
-  width: 300px; /* Breite auf 300 Pixel setzen */
-  height: auto; /* Höhe automatisch anpassen, um das Seitenverhältnis beizubehalten */
-  border: 2px solid #ddd; /* Rahmen um das Bild */
-  border-radius: 8px; /* Abgerundete Ecken */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatteneffekt */
-}
+
 
 section.spieler {
   display: flex;
@@ -104,6 +144,64 @@ section.spieler {
   background-color: #f9f9f9;
   max-width: 800px; /* Maximalbreite */
 }
+.alteClubs h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.alteClubs .text p {
+  font-size: 30px;
+  
+}
+.Titel{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+}
+.carousel {
+  width: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+
+.carousel>figure {
+  flex: 1;
+  display: none;
+  margin: 0;
+}
+
+.carousel>figure.active {
+  display: block;
+}
+
+.carousel>figure img {
+  width: auto;
+  height: 200px;
+  
+}
+
+
+
+.carousel-prev,
+.carousel-next {
+  color: #000;
+  border: none;
+  font-size: 4rem;
+  position: absolute;
+  top: calc(50% - 2rem);
+  background: transparent;
+  padding: 1rem;
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
 
 /* Section Aktuell*/
 
@@ -117,10 +215,12 @@ section.spieler {
 .teams img {
   width: 200px;
   height: 250px;
+  max-width: 100%;
 }
 
 .teamsText{
   text-align: center;
+  margin: 70px;
 }
 
 li {
@@ -143,15 +243,66 @@ li {
   align-items: center;
   padding: 10px; 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Verschärfter Schatteneffekt */
+  
 }
 .alteClubs img {
-  max-width: auto; /* Bild passt sich an die Breite des Containers an */
-  height: 200px; /* Beibehält das Seitenverhältnis */
+  max-width: auto; 
+  height: 200px; 
+  max-width: 100%;
 }
 
 .alteClubs .text {
-  font-size: 14px; /* Kleine Schriftgröße für den Text */
+  font-size: 14px; 
   text-align: center; 
+}
+
+
+/* Newsletter */
+.newsletter {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter input[type="email"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.newsletter input[type="submit"] {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter input[type="submit"]:hover {
+  background-color: #5a5a5a;
 }
 
 
@@ -193,33 +344,72 @@ li {
 
 /* clubs Sektion */
 .clubs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  list-style-type: none; /* Entfernt die Standard-Punkte der Liste */
+  margin: 0;
+  padding: 0; /* Entfernt das Standard-Padding der Liste */
 }
 
 .club1 {
-    border: 1px solid #000;
-    border-radius: 10px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
 .club1 img {
   margin: 20px;
-    width: auto;
-    height: 200px;
-    
+  width: auto;
+  height: 200px;
+  max-width: 100%;
 }
 
 .club1 h2 {
-    margin: 10px 0;
+  margin: 10px 0;
+  color: #000;
 }
 
 .club1:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
+.club1 a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
 
+/*kontakt.html*/
+.contact-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: #0779e4;
+}

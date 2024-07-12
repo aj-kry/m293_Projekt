@@ -1,0 +1,112 @@
+@media (min-width: 768px) {
+    .clubs {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  
+    .club1 {
+      flex-basis: calc(50% - 20px); 
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .clubs {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  
+    .club1 {
+      flex-basis: calc((33.333% - 20px) / 2); 
+    }
+  }
+  
+  
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+
+
+
+.text {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+.logo {
+    float: right; 
+    margin-left: 40px; 
+
+}
+
+.logo img {
+    width: auto; 
+    height: 70px; 
+    max-width: 100%;
+}
+
+
+/*manchester.html*/
+.carousel {
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  
+  .carousel>figure {
+    flex: 1;
+    display: none;
+    margin: 0;
+    
+  }
+  
+  .carousel>figure.active {
+    display: block;
+  }
+  
+  .carousel>figure img {
+    width: auto;
+    height: 400px;
+    max-width: 100%;
+    
+  }
+  
+  
+  
+  .carousel-prev,
+  .carousel-next {
+    color: #000;
+    border: none;
+    font-size: 4rem;
+    position: absolute;
+    top: 30%;
+    background: transparent;
+    padding: 1rem;
+    
+  }
+  
+  .carousel-prev {
+    left: 0;
+  }
+  
+  .carousel-next {
+    right: 0;
+  }
+h1{
+    text-align: center;
+}
